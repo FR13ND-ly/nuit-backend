@@ -30,7 +30,7 @@ class ItemsView(View):
             image = Image.open(file)
             output = BytesIO()
             
-            image.save(output, format='WebP', quality=20)
+            image.save(output, format='WebP', quality=5)
             
             webp_file = ContentFile(output.getvalue(), name=os.path.basename(file.name).split('.')[0] + '.webp')
             
