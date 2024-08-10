@@ -21,7 +21,7 @@ class ItemsView(View):
         res = []
         for item in items:
             res.append(getItemSerializer(item))
-        return JsonResponse(res, status=status.HTTP_201_CREATED, safe=False)
+        return JsonResponse(res, status=status.HTTP_200_OK, safe=False)
 
     def post(self, request, *args, **kwargs):
         files = request.FILES.getlist('files')
