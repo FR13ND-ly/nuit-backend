@@ -6,7 +6,7 @@ ENV SECRET_KEY=django-insecure-$t(32!@1!_t&tsrfgd@()!&gmjcu&=d&03--wu4qc8@4oxe32
 ENV DEBUG=True
 ENV ALLOWED_HOSTS=*
 
-ENV API_URL=http://localhost:8000/
+ENV API_URL=https://nuit-backend.onrender.com/
 
 COPY requirements.txt .
 
